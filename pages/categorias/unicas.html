@@ -1,11 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pioneras y Clásicas - Museo Virtual de Cámaras (Bootstrap 5 Only)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 </head>
-<body>
-    
+<body class="bg-light"> 
+    <header class="bg-dark text-white text-center py-5 mb-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Diseños Únicos y Conceptuales</h1>
+            <p class="lead">Explora la innovación y la experimentación a través de cámaras con estéticas y funciones que desafían lo convencional.</p>
+            </div>
+    </header>
+
+    <div class="container my-5">
+ <h2 class="text-center mb-4 display-5">Explora cámaras con una visión única</h2>
+
+ <div class="accordion" id="accordionCameras">
+
+            <div class="accordion-item shadow-sm mb-3 rounded">
+                <h2 class="accordion-header" id="headingFujifilmXHalf">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFujifilmXHalf" aria-expanded="false" aria-controls="collapseFujifilmXHalf">
+                        <img src="/src/img/fujifilm_xhalf.jpg" alt="Fujifilm X-Half" class="img-fluid rounded me-3" style="width: 100px; height: 80px; object-fit: cover;">
+                        <div class="flex-grow-1">
+                            <h5 class="mb-0">Fujifilm X-Half <span class="badge bg-secondary ms-2">2025</span></h5>
+                            <small class="text-muted d-block">La cámara digital que recrea la esencia de las "half-frame" analógicas.</small>
+                        </div>
+                    </button>
+                </h2>
+
+                <div id="collapseFujifilmXHalf" class="accordion-collapse collapse" aria-labelledby="headingFujifilmXHalf" data-bs-parent="#accordionCameras">
+                    <div class="accordion-body">
+                        <h6>Diseño y Características Destacadas:</h6>
+                        <ul>
+                            <li>**Inspiración "Half-Frame":** Diseñada para la composición vertical con un sensor orientado verticalmente.</li>
+                            <li>**Palanca de avance de "fotograma":** Una característica analógica que simula el avance de rollo.</li>
+                            <li>**Modo "Cámara de Película":** Permite simular carretes de 36, 54 o 72 "exposiciones" con revelado digital posterior.</li>
+                            <li>**Diseño ultra-compacto:** Muy ligera y pensada para llevar a diario y disparar de forma espontánea.</li>
+                        </ul>
+                        <p>La **Fujifilm X-Half** es una propuesta audaz que fusiona la nostalgia de las cámaras analógicas de medio formato con la conveniencia de lo digital. Su diseño minimalista y compacto, junto con funciones que emulan la experiencia de disparar con película (como la palanca de avance y el modo "Cámara de Película"), la convierten en una cámara única en el mercado actual. Está pensada para una forma de fotografiar más consciente y divertida, priorizando la experiencia y la composición vertical para compartir fácilmente en redes sociales.</p>
+                        <a href="detalle_fujifilm_xhalf.html" class="btn btn-primary mt-3">Ver detalles completos y anécdotas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item shadow-sm mb-3 rounded">
+                <h2 class="accordion-header" id="headingLytroLightfield">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLytroLightfield" aria-expanded="false" aria-controls="collapseLytroLightfield">
+                        <img src="/src/img/lytro.jpg" alt="Lytro Lightfield" class="img-fluid rounded me-3" style="width: 100px; height: 80px; object-fit: cover;">
+                        <div class="flex-grow-1">
+                            <h5 class="mb-0">Lytro Lightfield Camera <span class="badge bg-secondary ms-2">2012</span></h5>
+                            <small class="text-muted d-block">La cámara que permite enfocar las fotos *después* de tomarlas.</small>
+                        </div>
+                    </button>
+                </h2>
+                <div id="collapseLytroLightfield" class="accordion-collapse collapse" aria-labelledby="headingLytroLightfield" data-bs-parent="#accordionCameras">
+                    <div class="accordion-body">
+                        <h6>Tecnología y Diseño Único:</h6>
+                        <ul>
+                            <li>**Captura de campo de luz:** Graba dirección y color de los rayos de luz.</li>
+                            <li>**Diseño prismático:** Formato largo y estrecho, sin controles obvios.</li>
+                            <li>**Re-enfoque post-captura:** La característica principal de su tecnología.</li>
+                        </ul>
+                        <p>La **Lytro Lightfield Camera** fue una pionera en la tecnología de campo de luz, que permitía a los usuarios re-enfocar las imágenes después de haberlas tomado. Su diseño era igualmente futurista: un cuerpo prismático y minimalista que no se parecía a ninguna cámara convencional, con una pantalla táctil y pocos botones. Aunque la tecnología no despegó comercialmente a gran escala, la Lytro representó un audaz intento de cambiar la forma en que interactuamos con la fotografía.</p>
+                        <a href="detalle_lytro.html" class="btn btn-primary mt-3">Ver detalles completos y anécdotas</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item shadow-sm mb-3 rounded">
+                <h2 class="accordion-header" id="headingPolaroidSX70">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsePolaroidSX70" aria-expanded="false" aria-controls="collapsePolaroidSX70">
+                        <img src="/src/img/Polaroid_SX-70.jpg" alt="Polaroid SX-70" class="img-fluid rounded me-3" style="width: 100px; height: 80px; object-fit: cover;">
+                        <div class="flex-grow-1">
+                            <h5 class="mb-0">Polaroid SX-70 <span class="badge bg-secondary ms-2">1972</span></h5>
+                            <small class="text-muted d-block">La icónica SLR instantánea plegable que marcó una era.</small>
+                        </div>
+                    </button>
+                </h2>
+                <div id="collapsePolaroidSX70" class="accordion-collapse collapse" aria-labelledby="headingPolaroidSX70" data-bs-parent="#accordionCameras">
+                    <div class="accordion-body">
+                        <h6>Diseño Destacado:</h6>
+                        <ul>
+                            <li>**Plegable y compacta:** Se transforma de un prisma a un bloque delgado.</li>
+                            <li>**Sistema SLR único:** Permite un enfoque preciso con película instantánea.</li>
+                            <li>**Materiales premium:** Cuerpo de metal y piel, un lujo en una instantánea.</li>
+                        </ul>
+                        <p>La **Polaroid SX-70** es un ícono del diseño industrial y la innovación. Fue la primera cámara instantánea réflex de un solo objetivo, capaz de plegarse en una forma increíblemente compacta. Su estética atemporal, con un cuerpo de piel y metal, junto con la magia de ver la imagen desarrollarse en la palma de la mano, la convirtieron en un objeto de deseo para artistas, fotógrafos y el público en general. Un verdadero hito en la fotografía.</p>
+                        <a href="detalle_polaroid_sx70.html" class="btn btn-primary mt-3">Ver detalles completos y anécdotas</a>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
