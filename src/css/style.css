@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #FFE100; 
+}
+
 .card-hover {
   transition: transform 0.3s ease;
   border: none;
