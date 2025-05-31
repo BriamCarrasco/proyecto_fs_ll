@@ -23,28 +23,15 @@
 
     <main class="flex-grow-1">
         <div class="container my-5">
-            <h2 class="text-center mb-4 display-5">Red Komodo 6K</h2>
+            <h2 class="text-center mb-4 display-5"><span id="camara-nombre"></span></h2>
             <div class="row aling align-items-center">
                 <div class="col-md-4 text-center">
-                    <img src="/src/img/komodo_6k.jpg" class="img-fluid rounded" style="max-width: 400px;" alt="komodo_6k">
+                    <img id="camera-imagen" class="img-fluid rounded" style="max-width: 400px;" alt="Aaton7_LTR">
                 </div>
                 <div class="col-md-8">
-                    <p class="fs-5">
-                        La <strong>RED Komodo 6K</strong>, lanzada en la <strong>década de 2020</strong>, es una cámara cinematográfica digital compacta que revolucionó la producción independiente y profesional gracias a su tamaño reducido, calidad de imagen cinematográfica y accesibilidad dentro del ecosistema RED.
-                    </p>
-                    <p class="fs-5">
-                        Equipada con un sensor Super 35 de 6K y montura RF, la Komodo ofrece grabación en RAW comprimido (REDCODE) con un rango dinámico impresionante de más de 16 stops. Su diseño cúbico, liviano y robusto permite montarla en drones, gimbals o configuraciones de mano, brindando gran flexibilidad en producciones ágiles.
-                    </p>
-                    <p class="fs-5">
-                        La RED Komodo 6K ha sido adoptada por cineastas, documentalistas y creadores de contenido por igual, al ofrecer prestaciones profesionales en un formato portátil. Representa la nueva generación del cine digital, combinando innovación tecnológica, rendimiento de alto nivel y portabilidad extrema.
-                    </p>
+                    <p id="camara-descripcion" class="fs-5"></p>
                 </div>
-
-
-
-
             </div>
-
         </div>
 
         <section class="container my-5">
@@ -52,46 +39,40 @@
 
             <h5 class="mt-4">General</h5>
             <div class="row">
-                <div class="col-md-6"><strong>Marca:</strong> RED</div>
-                <div class="col-md-6"><strong>Modelo:</strong> Komodo 6K</div>
-                <div class="col-md-6"><strong>Tipo:</strong> Cámara cinematográfica digital compacta</div>
-                <div class="col-md-6"><strong>Fecha de lanzamiento:</strong> 2020</div>
-                <div class="col-12"><strong>Descripción:</strong> Cámara digital Super 35 compacta con grabación en RAW de 6K, ideal para cine independiente, documentales, producción móvil y como cámara B en grandes producciones. Destaca por su portabilidad, calidad de imagen RED y versatilidad de montaje.</div>
+                <div class="col-md-6"><strong>Marca:</strong><span id="camara-marca"></span></div>
+                <div class="col-md-6"><strong>Modelo:</strong><span id="camara-modelo"></span></div>
+                <div class="col-md-6"><strong>Tipo:</strong><span id="camara-tipo"></span></div>
+                <div class="col-md-6"><strong>Fecha de lanzamiento:</strong><span  id="camara-lanzamiento"></span></div>
+                <div class="col-12"><strong>Descripción:</strong><span id="camara-descripcion"></span></div>
             </div>
 
-            <h5 class="mt-4">Sensor / Grabación</h5>
+            <h5 class="mt-4">Sensor</h5>
             <div class="row">
-                <div class="col-md-6"><strong>Tipo de sensor:</strong> Super 35 CMOS global shutter</div>
-                <div class="col-md-6"><strong>Resolución máxima:</strong> 6144 x 3240 (6K)</div>
-                <div class="col-md-6"><strong>Formatos de grabación:</strong> REDCODE RAW HQ, MQ, LQ / ProRes 422 HQ</div>
-                <div class="col-md-6"><strong>Rango dinámico:</strong> Más de 16 stops</div>
+                <div class="col-md-6"><strong>Tipo de sensor:</strong><span id="camara-sensor"></span></div>
+                <div class="col-md-6"><strong>Tamaño de sensor:</strong><span id="camara-tamanio-sensor"></span></div>
+                <div class="col-md-6"><strong>Resolucion:</strong><span id="camara-resolucion"></span></div>
+                <div class="col-md-6"><strong>Sensibilidad ISO:</strong><span id="camara-sensibilidad"></span></div>
             </div>
 
-            <h5 class="mt-4">Lente</h5>
+            <h5 class="mt-4">Obturador</h5>
             <div class="row">
-                <div class="col-md-6"><strong>Montura:</strong> RF mount (compatible con adaptadores a PL, EF, etc.)</div>
-                <div class="col-md-6"><strong>Compatibilidad:</strong> Lentes fotográficos y de cine mediante adaptadores</div>
-                <div class="col-md-6"><strong>Enfoque:</strong> Manual / Electrónico (dependiendo del lente)</div>
+                <div class="col-md-6"><strong>Velocidad de obsturacion:</strong><span id="camara-velocidad"></span></div>
+                <div class="col-md-6"><strong>Rafaga:</strong><span id="camara-rafaga"></span></div>
             </div>
 
-            <h5 class="mt-4">Visor / Monitoreo</h5>
+            <h5 class="mt-4">Otros</h5>
             <div class="row">
-                <div class="col-md-6"><strong>Tipo de visor:</strong> No integrado (monitoreo a través de pantallas externas vía SDI o Wi-Fi)</div>
-                <div class="col-md-6"><strong>Pantalla integrada:</strong> Táctil, 2.9" LCD frontal (información básica y configuración)</div>
-            </div>
+                <div class="col-md-6"><strong>Puntos de enfoque:</strong><span id="camara-puntos"></span></div>
+                <div class="col-md-6"><strong>Vídeo:</strong><span id="camara-video"></span></div>
+                <div class="col-md-6"><strong>Pantalla:</strong><span id="camara-pantalla"></span></div>
+                <div class="col-md-6"><strong>Formato de archivo:</strong><span id="camara-formato"></span></div>
+                <div class="col-md-6"><strong>Flash:</strong><span id="camara-flash"></span></div>
+                <div class="col-md-6"><strong>Material de construccion:</strong><span id="camara-material"></span></div>
+                <div class="col-md-6"><strong>Montura:</strong><span id="camara-montura"></span></div>
+                <div class="col-md-6"><strong>Tipo visor:</strong><span id="camara-visor"></span></div>
+                <div class="col-md-6"><strong>Peso:</strong><span id="camara-peso"></span></div>
+                <div class="col-md-6"><strong>Categoría:</strong><span id="camara-categoria"></span></div>
 
-            <h5 class="mt-4">Controles / Funciones Digitales</h5>
-            <div class="row">
-                <div class="col-md-6"><strong>Velocidad de obturación:</strong> Electrónica, ajustable en grados o segundos</div>
-                <div class="col-md-6"><strong>Velocidad de grabación:</strong> Hasta 40 fps en 6K, 120 fps en 2K</div>
-                <div class="col-md-6"><strong>Controles de exposición:</strong> ISO, shutter, diafragma (si el lente lo permite), LUTs</div>
-                <div class="col-md-6"><strong>Conectividad:</strong> Wi-Fi, Genlock, Timecode, SDI</div>
-            </div>
-
-            <h5 class="mt-4">Batería / Energía</h5>
-            <div class="row">
-                <div class="col-md-6"><strong>Fuente de energía:</strong> Dos baterías Canon BP-9 o adaptador D-Tap/V-mount externo</div>
-                <div class="col-md-6"><strong>Peso:</strong> Aprox. 950 g (solo cuerpo)</div>
             </div>
         </section>
 
@@ -104,6 +85,20 @@
         <p>&copy; 2023 cutsFrame. Todos los derechos reservados.</p>
     </footer>
 
+
+
+    
+    <script>
+        const modelo = "Komodo 6K"; 
+    </script>
+    <script src="/src/js/camaras.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        if (typeof cargarInformacion === "function") {
+            cargarInformacion();
+        }
+    });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>

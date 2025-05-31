@@ -23,27 +23,15 @@
 
     <main class="flex-grow-1">
         <div class="container my-5">
-            <h2 class="text-center mb-4 display-5">Canon EOS 5D</h2>
+            <h2 class="text-center mb-4 display-5"><span id="camara-nombre"></span></h2>
             <div class="row aling align-items-center">
                 <div class="col-md-4 text-center">
-                    <img src="/src/img/canon_5d.jpg" class="img-fluid rounded" style="max-width: 400px;" alt="canon5d">
+                    <img id="camera-imagen" class="img-fluid rounded" style="max-width: 400px;" alt="Aaton7_LTR">
                 </div>
                 <div class="col-md-8">
-                    <p class="fs-5">
-                        La <strong>Canon EOS 5D</strong>, presentada en <strong>2005</strong>, marcó un hito en la fotografía digital al ser la primera cámara réflex digital de formato completo (full frame) con un cuerpo relativamente compacto y accesible para fotógrafos profesionales y avanzados.
-                    </p>
-                    <p class="fs-5">
-                        Equipada con un sensor CMOS de 35 mm y 12.8 megapíxeles, la 5D ofrecía una calidad de imagen excepcional, profundidad de campo auténtica y excelente rendimiento con poca luz. Su compatibilidad con la amplia gama de lentes EF y su construcción robusta la convirtieron en una herramienta versátil tanto para estudio como para trabajo en terreno.
-                    </p>
-                    <p class="fs-5">
-                        La Canon EOS 5D redefinió los estándares de la fotografía profesional, allanando el camino para generaciones futuras de cámaras full frame. Su legado perdura como una de las cámaras más influyentes de su época, apreciada por fotógrafos de retrato, paisaje y eventos alrededor del mundo.
-                    </p>
+                    <p id="camara-descripcion" class="fs-5"></p>
                 </div>
-
-
-
             </div>
-
         </div>
 
         <section class="container my-5">
@@ -51,46 +39,42 @@
 
             <h5 class="mt-4">General</h5>
             <div class="row">
-                <div class="col-md-6"><strong>Marca:</strong> Canon</div>
-                <div class="col-md-6"><strong>Modelo:</strong> EOS 5D</div>
-                <div class="col-md-6"><strong>Tipo:</strong> Cámara réflex digital (DSLR) de formato completo</div>
-                <div class="col-md-6"><strong>Fecha de lanzamiento:</strong> 2005</div>
-                <div class="col-12"><strong>Descripción:</strong> Primera DSLR full-frame en un cuerpo relativamente compacto, orientada a fotógrafos profesionales y entusiastas avanzados.</div>
+                <div class="col-md-6"><strong>Marca:</strong><span id="camara-marca"></span></div>
+                <div class="col-md-6"><strong>Modelo:</strong><span id="camara-modelo"></span></div>
+                <div class="col-md-6"><strong>Tipo:</strong><span id="camara-tipo"></span></div>
+                <div class="col-md-6"><strong>Fecha de lanzamiento:</strong><span  id="camara-lanzamiento"></span></div>
+                <div class="col-12"><strong>Descripción:</strong><span id="camara-descripcion"></span></div>
             </div>
 
-            <h5 class="mt-4">Sensor / Película</h5>
+            <h5 class="mt-4">Sensor</h5>
             <div class="row">
-                <div class="col-md-6"><strong>Tipo de sensor:</strong> CMOS de formato completo (Full Frame, 36 x 24 mm)</div>
-                <div class="col-md-6"><strong>Resolución:</strong> 12.8 megapíxeles</div>
-                <div class="col-md-6"><strong>ISO soportado:</strong> 100–1600 (expandible a 50–3200)</div>
+                <div class="col-md-6"><strong>Tipo de sensor:</strong><span id="camara-sensor"></span></div>
+                <div class="col-md-6"><strong>Tamaño de sensor:</strong><span id="camara-tamanio-sensor"></span></div>
+                <div class="col-md-6"><strong>Resolucion:</strong><span id="camara-resolucion"></span></div>
+                <div class="col-md-6"><strong>Sensibilidad ISO:</strong><span id="camara-sensibilidad"></span></div>
             </div>
 
-            <h5 class="mt-4">Lente</h5>
+            <h5 class="mt-4">Obturador</h5>
             <div class="row">
-                <div class="col-md-6"><strong>Montura:</strong> Canon EF</div>
-                <div class="col-md-6"><strong>Zoom óptico:</strong> Dependiente del lente utilizado</div>
-                <div class="col-md-6"><strong>Estabilización:</strong> No incorporada (dependiente del lente)</div>
+                <div class="col-md-6"><strong>Velocidad de obsturacion:</strong><span id="camara-velocidad"></span></div>
+                <div class="col-md-6"><strong>Rafaga:</strong><span id="camara-rafaga"></span></div>
             </div>
 
-            <h5 class="mt-4">Visor</h5>
+            <h5 class="mt-4">Otros</h5>
             <div class="row">
-                <div class="col-md-6"><strong>Tipo de visor:</strong> Visor óptico tipo pentaprisma con cobertura del 96%</div>
-            </div>
+                <div class="col-md-6"><strong>Puntos de enfoque:</strong><span id="camara-puntos"></span></div>
+                <div class="col-md-6"><strong>Vídeo:</strong><span id="camara-video"></span></div>
+                <div class="col-md-6"><strong>Pantalla:</strong><span id="camara-pantalla"></span></div>
+                <div class="col-md-6"><strong>Formato de archivo:</strong><span id="camara-formato"></span></div>
+                <div class="col-md-6"><strong>Flash:</strong><span id="camara-flash"></span></div>
+                <div class="col-md-6"><strong>Material de construccion:</strong><span id="camara-material"></span></div>
+                <div class="col-md-6"><strong>Montura:</strong><span id="camara-montura"></span></div>
+                <div class="col-md-6"><strong>Tipo visor:</strong><span id="camara-visor"></span></div>
+                <div class="col-md-6"><strong>Peso:</strong><span id="camara-peso"></span></div>
+                <div class="col-md-6"><strong>Categoría:</strong><span id="camara-categoria"></span></div>
 
-            <h5 class="mt-4">Controles (Digital)</h5>
-            <div class="row">
-                <div class="col-md-6"><strong>Modos de disparo:</strong> Manual, Av, Tv, P, Auto y modos personalizados</div>
-                <div class="col-md-6"><strong>Avance:</strong> Disparo continuo hasta 3 fps</div>
-                <div class="col-md-6"><strong>Medición de luz:</strong> Evaluativa, parcial y puntual</div>
-            </div>
-
-            <h5 class="mt-4">Batería / Energía</h5>
-            <div class="row">
-                <div class="col-md-6"><strong>Fuente de energía:</strong> Batería recargable Canon BP-511A</div>
-                <div class="col-md-6"><strong>Peso:</strong> Aproximadamente 895 g (solo cuerpo, sin batería ni lente)</div>
             </div>
         </section>
-
 
 
 
@@ -101,6 +85,20 @@
         <p>&copy; 2023 cutsFrame. Todos los derechos reservados.</p>
     </footer>
 
+
+
+    
+    <script>
+        const modelo = "EOS 5D"; 
+    </script>
+    <script src="/src/js/camaras.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        if (typeof cargarInformacion === "function") {
+            cargarInformacion();
+        }
+    });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>

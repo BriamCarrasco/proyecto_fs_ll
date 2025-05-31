@@ -23,78 +23,59 @@
 
     <main class="flex-grow-1">
         <div class="container my-5">
-            <h2 class="text-center mb-4 display-5">Leica M3</h2>
+            <h2 class="text-center mb-4 display-5"><span id="camara-nombre"></span></h2>
             <div class="row aling align-items-center">
                 <div class="col-md-4 text-center">
-                    <img src="/src/img/leica-m3.jpg" class="img-fluid rounded" style="max-width: 400px;" alt="leicam3">
+                    <img id="camera-imagen" class="img-fluid rounded" style="max-width: 400px;" alt="Aaton7_LTR">
                 </div>
                 <div class="col-md-8">
-                    <p class="fs-5">
-                        La <strong>Leica M3</strong>, lanzada en <strong>1954</strong>, es una de las cámaras más icónicas de la historia de la fotografía. Fue la primera cámara de la serie M de Leica, reemplazando a la serie de tornillo (como la Leica IIIf) y marcando un hito en el diseño con su innovador visor combinado y sistema de enfoque telemétrico.
-                    </p>
-                    <p class="fs-5">
-                        En su época, la M3 se destacaba por su construcción robusta, precisión mecánica y facilidad de uso, convirtiéndose en la cámara preferida por fotoperiodistas y artistas como Henri Cartier-Bresson. Su competencia directa incluía cámaras como la Nikon S2 y la Canon P, aunque ninguna igualó la calidad óptica y mecánica de la Leica en ese momento.
-                    </p>
-                    <p class="fs-5">
-                        La M3 no solo definió un estándar en cámaras telemétricas, sino que también consolidó la reputación de Leica como referente de calidad. Su legado perdura hoy, siendo aún utilizada por fotógrafos apasionados por el film y el diseño clásico.
-                    </p>
+                    <p id="camara-descripcion" class="fs-5"></p>
                 </div>
-
             </div>
-
         </div>
 
         <section class="container my-5">
-        <h3 class="text-center mb-4">Especificaciones Técnicas</h3>
+            <h3 class="text-center mb-4">Especificaciones Técnicas</h3>
 
-        <!-- GENERAL -->
-        <h5 class="mt-4">General</h5>
-        <div class="row">
-            <div class="col-md-6"><strong>Marca:</strong> Leica</div>
-            <div class="col-md-6"><strong>Modelo:</strong> M3</div>
-            <div class="col-md-6"><strong>Tipo:</strong> Analógica</div>
-            <div class="col-md-6"><strong>Fecha de lanzamiento:</strong> 1954</div>
-            <div class="col-12"><strong>Descripción:</strong> Cámara telemétrica icónica que marcó un hito en la fotografía profesional.</div>
-        </div>
+            <h5 class="mt-4">General</h5>
+            <div class="row">
+                <div class="col-md-6"><strong>Marca:</strong><span id="camara-marca"></span></div>
+                <div class="col-md-6"><strong>Modelo:</strong><span id="camara-modelo"></span></div>
+                <div class="col-md-6"><strong>Tipo:</strong><span id="camara-tipo"></span></div>
+                <div class="col-md-6"><strong>Fecha de lanzamiento:</strong><span  id="camara-lanzamiento"></span></div>
+                <div class="col-12"><strong>Descripción:</strong><span id="camara-descripcion"></span></div>
+            </div>
 
-        <!-- SENSOR / PELÍCULA -->
-        <h5 class="mt-4">Sensor / Película</h5>
-        <div class="row">
-            <div class="col-md-6"><strong>Tipo de película:</strong> 35mm</div>
-            <div class="col-md-6"><strong>ISO soportado:</strong> ISO 100, 400</div>
-            <div class="col-md-6"><strong>Tamaño del negativo:</strong> 24x36mm</div>
-        </div>
+            <h5 class="mt-4">Sensor</h5>
+            <div class="row">
+                <div class="col-md-6"><strong>Tipo de sensor:</strong><span id="camara-sensor"></span></div>
+                <div class="col-md-6"><strong>Tamaño de sensor:</strong><span id="camara-tamanio-sensor"></span></div>
+                <div class="col-md-6"><strong>Resolucion:</strong><span id="camara-resolucion"></span></div>
+                <div class="col-md-6"><strong>Sensibilidad ISO:</strong><span id="camara-sensibilidad"></span></div>
+            </div>
 
-        <!-- LENTE -->
-        <h5 class="mt-4">Lente</h5>
-        <div class="row">
-            <div class="col-md-6"><strong>Montura:</strong> M-mount</div>
-            <div class="col-md-6"><strong>Zoom óptico:</strong> No aplica</div>
-            <div class="col-md-6"><strong>Estabilización:</strong> No</div>
-        </div>
+            <h5 class="mt-4">Obturador</h5>
+            <div class="row">
+                <div class="col-md-6"><strong>Velocidad de obsturacion:</strong><span id="camara-velocidad"></span></div>
+                <div class="col-md-6"><strong>Rafaga:</strong><span id="camara-rafaga"></span></div>
+            </div>
 
-        <!-- VISOR -->
-        <h5 class="mt-4">Visor</h5>
-        <div class="row">
-            <div class="col-md-6"><strong>Tipo de visor:</strong> Óptico telemétrico</div>
-        </div>
+            <h5 class="mt-4">Otros</h5>
+            <div class="row">
+                <div class="col-md-6"><strong>Puntos de enfoque:</strong><span id="camara-puntos"></span></div>
+                <div class="col-md-6"><strong>Vídeo:</strong><span id="camara-video"></span></div>
+                <div class="col-md-6"><strong>Pantalla:</strong><span id="camara-pantalla"></span></div>
+                <div class="col-md-6"><strong>Formato de archivo:</strong><span id="camara-formato"></span></div>
+                <div class="col-md-6"><strong>Flash:</strong><span id="camara-flash"></span></div>
+                <div class="col-md-6"><strong>Material de construccion:</strong><span id="camara-material"></span></div>
+                <div class="col-md-6"><strong>Montura:</strong><span id="camara-montura"></span></div>
+                <div class="col-md-6"><strong>Tipo visor:</strong><span id="camara-visor"></span></div>
+                <div class="col-md-6"><strong>Peso:</strong><span id="camara-peso"></span></div>
+                <div class="col-md-6"><strong>Categoría:</strong><span id="camara-categoria"></span></div>
 
-        <!-- CONTROLES -->
-        <h5 class="mt-4">Controles (Analógica)</h5>
-        <div class="row">
-            <div class="col-md-6"><strong>Velocidad de obturación:</strong> 1s-1/1000s + Bulb</div>
-            <div class="col-md-6"><strong>Avance de película:</strong> Manual</div>
-            <div class="col-md-6"><strong>Exposición automática:</strong> No</div>
-            <div class="col-md-6"><strong>Medición de luz:</strong> Ninguna (requiere fotómetro externo)</div>
-        </div>
-
-        <!-- BATERÍA -->
-        <h5 class="mt-4">Batería / Energía</h5>
-        <div class="row">
-            <div class="col-md-6"><strong>Fuente de energía:</strong> Mecánica (sin baterías)</div>
-            <div class="col-md-6"><strong>Peso:</strong> 580g</div>
-        </div>
+            </div>
         </section>
+
 
 
     </main>
@@ -104,6 +85,20 @@
         <p>&copy; 2023 cutsFrame. Todos los derechos reservados.</p>
     </footer>
 
+
+
+    
+    <script>
+        const modelo = "M3"; 
+    </script>
+    <script src="/src/js/camaras.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        if (typeof cargarInformacion === "function") {
+            cargarInformacion();
+        }
+    });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
