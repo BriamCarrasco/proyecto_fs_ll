@@ -22,6 +22,10 @@ const camaras = [
     montura: "N/A",
     tipoVisor: "Visor óptico de hombro",
     peso: "Aproximadamente 3.2 kg",
+    infoCamara: ["La Aaton 7 LTR, lanzada en la década de 1970, fue una cámara cinematográfica innovadora que marcó un antes y un después en el cine independiente. Su diseño ergonómico tipo “gato al hombro” ofrecía comodidad y estabilidad, facilitando el trabajo en terreno con una estética profesional",
+    "Equipada con un motor silencioso, visor réflex y una mecánica robusta, la Aaton 7 LTR permitió una grabación fluida en 16 mm, ideal para documentales, cine de autor y producciones ágiles. Su sistema de carga rápida de película y su precisión en el arrastre fueron muy valorados por operadores de cámara.",
+    "La Aaton 7 LTR no solo democratizó el acceso al cine de calidad, sino que también se convirtió en una herramienta creativa para cineastas de todo el mundo. Su legado permanece vigente, siendo considerada una de las cámaras más emblemáticas en la historia del cine documental y de guerrilla."
+    ],
     caracteristicas: [
       "Formato: 16mm",
       "Diseño ergonómico: Inspirado en la forma de un gato sobre el hombro ('cat-on-the-shoulder').",
@@ -55,6 +59,11 @@ const camaras = [
     montura: "Arriflex estándar",
     tipoVisor: "Visor óptico réflex",
     peso: "Aproximadamente 6.5 kg",
+    infoCamara:[
+      "La Arriflex BL4, introducida a principios de la década de 1980, fue una cámara cinematográfica de 35 mm que consolidó el estándar de excelencia en la industria del cine profesional. Su sistema “BL” (blimped) garantizaba un funcionamiento silencioso, ideal para tomas con grabación directa de sonido.",
+      "Con un diseño robusto y modular, visor réflex de alta calidad y compatibilidad con lentes PL mount, la Arriflex BL4 ofrecía gran versatilidad en rodajes de alto nivel. Su precisión mecánica, estabilidad en el transporte de película y confiabilidad la convirtieron en una favorita para estudios y cineastas exigentes.",
+      "La BL4 no solo representó un hito tecnológico en su época, sino que también fue clave en la producción de numerosas películas y comerciales de alto perfil. A día de hoy, sigue siendo un ícono del cine analógico, símbolo de calidad, ingeniería alemana y tradición cinematográfica."
+    ],
     caracteristicas: [
       "Formato: 35mm",
       "Sistema silencioso: Ideal para grabación de sonido directo en cine.",
@@ -88,6 +97,11 @@ const camaras = [
     montura: "Canon RF",
     tipoVisor: "No especificado",
     peso: "No especificado",
+    infoCamara: [
+      "La RED Komodo 6K, lanzada en la década de 2020, es una cámara cinematográfica digital compacta que revolucionó la producción independiente y profesional gracias a su tamaño reducido, calidad de imagen cinematográfica y accesibilidad dentro del ecosistema RED.",
+      "Equipada con un sensor Super 35 de 6K y montura RF, la Komodo ofrece grabación en RAW comprimido (REDCODE) con un rango dinámico impresionante de más de 16 stops. Su diseño cúbico, liviano y robusto permite montarla en drones, gimbals o configuraciones de mano, brindando gran flexibilidad en producciones ágiles.",
+      "La RED Komodo 6K ha sido adoptada por cineastas, documentalistas y creadores de contenido por igual, al ofrecer prestaciones profesionales en un formato portátil. Representa la nueva generación del cine digital, combinando innovación tecnológica, rendimiento de alto nivel y portabilidad extrema."
+    ],
     caracteristicas: [
       "Resolución: 6K Super 35",
       "Tamaño compacto: Fácil de montar en drones, gimbals y rigs ligeros.",
@@ -121,6 +135,10 @@ const camaras = [
     montura: "Leica M",
     tipoVisor: "Telémetro con líneas de encuadre para 50mm, 90mm y 135mm",
     peso: "Aproximadamente 580 g (solo cuerpo)",
+    infoCamara:["La Leica M3, lanzada en 1954, es una de las cámaras más icónicas de la historia de la fotografía. Fue la primera cámara de la serie M de Leica, reemplazando a la serie de tornillo (como la Leica IIIf) y marcando un hito en el diseño con su innovador visor combinado y sistema de enfoque telemétrico.",
+    "En su época, la M3 se destacaba por su construcción robusta, precisión mecánica y facilidad de uso, convirtiéndose en la cámara preferida por fotoperiodistas y artistas como Henri Cartier-Bresson. Su competencia directa incluía cámaras como la Nikon S2 y la Canon P, aunque ninguna igualó la calidad óptica y mecánica de la Leica en ese momento.",
+    "La M3 no solo definió un estándar en cámaras telemétricas, sino que también consolidó la reputación de Leica como referente de calidad. Su legado perdura hoy, siendo aún utilizada por fotógrafos apasionados por el film y el diseño clásico."
+    ],
     caracteristicas: [
       "Tipo: Cámara de telémetro de 35mm",
       "Lentes: Intercambiables, montura Leica M",
@@ -154,6 +172,10 @@ const camaras = [
     montura: "No intercambiable",
     tipoVisor: "Visores ópticos simples (tipo periscopio)",
     peso: "Aproximadamente 450 g",
+    infoCamara:["La Kodak Brownie fue lanzada en 1900 por Eastman Kodak Company y revolucionó la fotografía al hacerla accesible para el público general. Fue una de las primeras cámaras de bajo costo, compacta y fácil de usar, diseñada especialmente para aficionados.",
+    "Con su estructura de cartón y lente sencilla, la Brownie popularizó el concepto de la fotografía instantánea: 'Usted aprieta el botón, nosotros hacemos el resto'. Permitió que millones de personas documentaran su vida cotidiana por primera vez, dando origen al concepto de la fotografía popular.",
+    "En su época, no tenía una competencia directa en términos de simplicidad y precio. La Brownie marcó el inicio de la fotografía amateur y familiar, y su legado perdura como símbolo de democratización tecnológica en el ámbito fotográfico."
+    ],
     caracteristicas: [
       "Tipo: Cámara de caja simple",
       "Película: Rollo 117",
@@ -187,6 +209,11 @@ const camaras = [
     montura: "Nikon F (la primera versión de esta montura)",
     tipoVisor: "Visor réflex intercambiable con pentaprisma",
     peso: "Aproximadamente 685 g (solo el cuerpo)",
+    infoCamara:[
+    "La Nikon F, lanzada en 1959, fue una cámara revolucionaria que marcó el inicio del dominio de Nikon en la fotografía profesional. Fue la primera réflex de 35mm de la marca y estableció el estándar para las cámaras SLR modernas gracias a su sistema modular y diseño robusto.",
+    "Con visor intercambiable, fotómetro acoplable y una amplia gama de accesorios, la Nikon F ofrecía una flexibilidad sin precedentes. Su confiabilidad y precisión la convirtieron en la cámara preferida por fotoperiodistas y agencias como la NASA, que la usaron incluso en misiones espaciales.",
+    "La Nikon F no solo consolidó la reputación de Nikon a nivel mundial, sino que también transformó la industria, desplazando a las cámaras telemétricas como opción principal para los profesionales. Su legado perdura, siendo aún apreciada por coleccionistas y fotógrafos de film."
+    ],
     caracteristicas: [
       "Tipo: SLR (Single-Lens Reflex) de 35mm",
       "Lentes: Intercambiables, montura Nikon F (la primera)",
@@ -220,6 +247,11 @@ const camaras = [
     montura: "Nikon F",
     tipoVisor: "Óptico pentaprisma",
     peso: "1.2 kg (aprox)",
+    infoCamara:[
+      "La Nikon D1, lanzada a finales de la década de 1990, fue una cámara revolucionaria que marcó el inicio de la era digital profesional en la fotografía. Diseñada íntegramente por Nikon, esta DSLR representó una transición histórica desde la película al sensor digital.",
+      "Con un sensor CCD de 2.7 megapíxeles, velocidad de disparo continuo de 4.5 fps y cuerpo robusto basado en las cámaras réflex de la marca, la Nikon D1 ofrecía rendimiento y fiabilidad para fotoperiodistas y profesionales exigentes. Su integración con flujos de trabajo digitales permitió una agilidad inédita en la entrega de imágenes.",
+      "La Nikon D1 no solo sentó las bases de las cámaras réflex digitales modernas, sino que también democratizó el acceso a la fotografía digital profesional. Su impacto fue decisivo en el fotoperiodismo y en la evolución de la industria, consolidándose como un ícono pionero en la transición hacia lo digital."
+    ],
     caracteristicas: [
       "Sensor: CCD de 2.7 MP APS-C",
       "ISO: 200-1600",
@@ -253,6 +285,11 @@ const camaras = [
     montura: "Canon EF",
     tipoVisor: "Óptico pentaprisma",
     peso: "895 g (solo cuerpo)",
+    infoCamara:[
+      "La Canon EOS 5D, presentada en 2005, marcó un hito en la fotografía digital al ser la primera cámara réflex digital de formato completo (full frame) con un cuerpo relativamente compacto y accesible para fotógrafos profesionales y avanzados.",
+      "Equipada con un sensor CMOS de 35 mm y 12.8 megapíxeles, la 5D ofrecía una calidad de imagen excepcional, profundidad de campo auténtica y excelente rendimiento con poca luz. Su compatibilidad con la amplia gama de lentes EF y su construcción robusta la convirtieron en una herramienta versátil tanto para estudio como para trabajo en terreno.",
+      "La Canon EOS 5D redefinió los estándares de la fotografía profesional, allanando el camino para generaciones futuras de cámaras full frame. Su legado perdura como una de las cámaras más influyentes de su época, apreciada por fotógrafos de retrato, paisaje y eventos alrededor del mundo."
+    ],
     caracteristicas: [
       "Sensor: CMOS full frame de 12.8 MP",
       "ISO: 100-1600 (ampliable)",
@@ -286,6 +323,11 @@ const camaras = [
     montura: "Nikon F",
     tipoVisor: "Óptico pentaprisma",
     peso: "620 g (aprox)",
+    infoCamara:[
+      "La Nikon D90, presentada en 2008, fue una cámara innovadora que marcó un hito al ser la primera DSLR del mundo en incorporar grabación de video en alta definición. Esta funcionalidad revolucionaria la convirtió en una opción popular entre fotógrafos y videógrafos emergentes.",
+      "Equipada con un sensor CMOS de 12.3 megapíxeles, un sistema de enfoque rápido y preciso, y una excelente calidad de imagen, la Nikon D90 ofrecía un equilibrio ideal entre rendimiento, portabilidad y precio. Su cuerpo ergonómico y su interfaz intuitiva la hacían atractiva tanto para aficionados avanzados como para profesionales.",
+      "La Nikon D90 no solo elevó el estándar de las cámaras de gama media, sino que también ayudó a democratizar la producción audiovisual, al permitir a los usuarios capturar fotos y videos de alta calidad con un solo dispositivo. Su legado perdura como uno de los modelos más influyentes de su época."
+    ],
     caracteristicas: [
       "Sensor: CMOS APS-C de 12.3 MP",
       "ISO: 200-3200 (ampliable)",
@@ -319,6 +361,11 @@ const camaras = [
     montura: "Fija o tipo X (no confirmado)",
     tipoVisor: "No especificado",
     peso: "Muy ligera",
+    infoCamara:[
+      "La Fujifilm X-Half, lanzada en 2025, representa una innovadora cámara digital compacta que combina un diseño retro con tecnología moderna, pensada especialmente para creadores de contenido y fotógrafos que buscan estilo y funcionalidad en un formato portátil.",
+      "Su sensor CMOS de 1 pulgada y lente fija FUJINON de 10.8 mm f/2.8 permiten capturar imágenes de alta calidad en un formato vertical 3:4, ideal para redes sociales y fotografía creativa. La X-Half destaca por su cuerpo ligero y compacto, junto con un visor óptico vertical y una pantalla táctil trasera optimizada para composición en formato vertical.",
+      "En un mercado dominado por cámaras tradicionales, la Fujifilm X-Half ofrece una experiencia fotográfica única que combina estética vintage, portabilidad y herramientas creativas, convirtiéndola en un símbolo de innovación y estilo para la fotografía contemporánea."
+    ],
     caracteristicas: [
       "Inspiración \"Half-Frame\": Diseñada para la composición vertical con un sensor orientado verticalmente.",
       "Palanca de avance de \"fotograma\": Una característica analógica que simula el avance de rollo.",
@@ -352,6 +399,11 @@ const camaras = [
     montura: "Fija",
     tipoVisor: "No posee visor óptico",
     peso: "224 g",
+    infoCamara:[
+      "La Lytro Lightfield, lanzada en 2012, revolucionó la fotografía digital al introducir la tecnología de fotografía de campo de luz, permitiendo capturar no solo la intensidad, sino también la dirección de la luz, lo que abre nuevas posibilidades creativas en el enfoque y la composición después de tomada la foto.",
+      "Su innovador sensor de campo de luz y diseño compacto permitían a los usuarios ajustar el enfoque, la profundidad de campo y la perspectiva tras la captura, cambiando por completo la experiencia tradicional de la fotografía digital. La cámara estaba pensada para entusiastas y profesionales interesados en explorar nuevas fronteras creativas.",
+      "Aunque la Lytro Lightfield no tuvo competencia directa en su momento debido a su tecnología única, su legado perdura como pionera en el campo de la fotografía computacional, inspirando desarrollos futuros en cámaras y dispositivos con capacidades avanzadas de captura y edición de imagen."
+    ],
     caracteristicas: [
       "Captura de campo de luz: Graba dirección y color de los rayos de luz.",
       "Diseño prismático: Formato largo y estrecho, sin controles obvios.",
@@ -384,6 +436,11 @@ const camaras = [
     montura: "Fija con lente plegable",
     tipoVisor: "Óptico réflex (SLR)",
     peso: "623 g",
+    infoCamara:[
+      "La Polaroid SX-70, lanzada en 1972, fue una cámara instantánea revolucionaria que redefinió la fotografía al integrar un diseño plegable elegante con la capacidad de revelar fotos automáticamente en segundos. Fue la primera cámara SLR instantánea del mundo.",
+      "Con su innovador sistema de autofoco por sonar (en modelos posteriores), lente de vidrio de alta calidad y película integral auto-revelable, la SX-70 ofrecía una experiencia fotográfica única, instantánea y creativa. Su diseño compacto y futurista fue elogiado tanto por ingenieros como por diseñadores industriales.",
+      "La SX-70 no solo convirtió la fotografía instantánea en un arte accesible, sino que también inspiró a generaciones de artistas y fotógrafos, incluyendo a Andy Warhol. Su impacto cultural y estético continúa vigente, siendo una de las cámaras más icónicas del siglo XX."
+    ],
     caracteristicas: [
       "Tipo: Cámara instantánea SLR plegable",
       "Formato: Película instantánea integral SX-70",
@@ -429,12 +486,47 @@ function generarCamaras() {
     });
 }
 
+function cargarInformacion() {
+    const camara = camaras.find(c => c.modelo === modelo);
 
+    if (camara) {
+        document.getElementById("camara-nombre").textContent = `${camara.marca} ${camara.modelo}`;
+        document.getElementById("camera-imagen").src = camara.imagen;
+        document.getElementById("camera-imagen").alt = camara.modelo;
+        document.getElementById("camara-descripcion").textContent = camara.infoCamara;
+        document.getElementById("camara-marca").textContent = ' ' + camara.marca;
+        document.getElementById("camara-modelo").textContent = ' ' + camara.modelo;
+        document.getElementById("camara-tipo").textContent = ' ' + camara.tipoCamara;
+        document.getElementById("camara-lanzamiento").textContent = ' ' + camara.fechaLanzamiento;
+
+        document.getElementById("camara-sensor").textContent = ' ' + camara.tipoSensor;
+        document.getElementById("camara-tamanio-sensor").textContent = ' ' + camara.tamanoSensor;
+        document.getElementById("camara-resolucion").textContent = ' ' + camara.resolucion;
+        document.getElementById("camara-sensibilidad").textContent = ' ' + camara.ISO;
+
+        document.getElementById("camara-velocidad").textContent = ' ' + camara.velocidadObturacion;
+        document.getElementById("camara-rafaga").textContent = ' ' + camara.velocidadRafaga;
+
+        document.getElementById("camara-puntos").textContent = ' ' + camara.puntosEnfoque;
+        document.getElementById("camara-video").textContent = ' ' + camara.video;
+        document.getElementById("camara-pantalla").textContent = ' ' + camara.pantalla;
+        document.getElementById("camara-formato").textContent = ' ' + camara.formatoArchivo;
+        document.getElementById("camara-flash").textContent = ' ' + camara.flash;
+        document.getElementById("camara-material").textContent = ' ' + camara.materialConstruccion;
+        document.getElementById("camara-montura").textContent = ' ' + camara.montura;
+        document.getElementById("camara-visor").textContent = ' ' + camara.tipoVisor;
+        document.getElementById("camara-peso").textContent = ' ' + camara.peso;
+        document.getElementById("camara-categoria").textContent = ' ' + camara.categoria;
+    } else {
+        document.querySelector("main").innerHTML = "<p class='text-center text-danger'>Cámara no encontrada.</p>";
+    }
+}
 
 
 
 document.addEventListener("DOMContentLoaded", () => {
   generarCamaras();
+  cargarInformacion();
 
 });
 
