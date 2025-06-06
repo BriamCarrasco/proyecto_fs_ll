@@ -1,3 +1,5 @@
+//información de cámaras
+
 const camaras = [
   {
     id: "Aaton7LTR",
@@ -453,7 +455,7 @@ const camaras = [
   }
 ];
 
-
+//cargar camaras e información de la categoría actual
 function generarCamaras() {
   const contenedor = document.getElementById("accordionCameras");
   contenedor.innerHTML = ""; // limpia contenido anterior si existe
@@ -486,6 +488,8 @@ function generarCamaras() {
     });
 }
 
+
+//cargar información de la cámaras
 function cargarInformacion() {
     const camara = camaras.find(c => c.modelo === modelo);
 
