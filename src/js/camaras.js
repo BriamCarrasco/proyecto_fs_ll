@@ -526,6 +526,67 @@ function cargarInformacion() {
     }
 }
 
+function generarTablaCamaras() {
+  const tbody = document.querySelector("#tablaCamaras tbody");
+  if (!tbody) return;
+
+  tbody.innerHTML = ""; // Limpia la tabla antes de cargar
+
+  camaras.forEach((camara, idx) => {
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td><img src="${camara.imagen}" alt="${camara.modelo}" style="width:60px; height:45px; object-fit:cover;" class="rounded"></td>
+      <td>${camara.marca}</td>
+      <td>${camara.modelo}</td>
+      <td>${camara.categoria}</td>
+      <td>${camara.fechaLanzamiento}</td>
+      <td>${camara.tipoCamara}</td>
+      <td>
+        <a href="${camara.link}" class="btn btn-sm btn-outline-dark mb-1">Ver</a>
+        <button class="btn btn-sm btn-warning mb-1 btn-editar" data-idx="${idx}"><i class="bi bi-pencil"></i></button>
+        <button class="btn btn-sm btn-danger mb-1 btn-eliminar" data-idx="${idx}"><i class="bi bi-trash"></i></button>
+      </td>
+    `;
+    tbody.appendChild(tr);
+  });
+
+  // Eventos para eliminar
+  tbody.querySelectorAll('.btn-eliminar').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const idx = this.getAttribute('data-idx');
+      eliminarCamara(idx);
+    });
+  });
+
+  // Eventos para editar
+  tbody.querySelectorAll('.btn-editar').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const idx = this.getAttribute('data-idx');
+      editarCamara(idx);
+    });
+  });
+}
+
+//funcionar para eliminar camaras.
+function eliminarCamara(idx) {
+  if (confirm("¿Seguro que deseas eliminar esta cámara?")) {
+    camaras.splice(idx, 1);
+    generarTablaCamaras();
+  }
+}
+
+//función para editar camaras.
+function editarCamara(idx) {
+  const camara = camaras[idx];
+  const nuevoModelo = prompt("Editar modelo:", camara.modelo);
+  if (nuevoModelo !== null && nuevoModelo.trim() !== "") {
+    camara.modelo = nuevoModelo.trim();
+    generarTablaCamaras();
+  }
+}
+
+//ejecutar script al cargar el DOM
+document.addEventListener("DOMContentLoaded", generarTablaCamaras);
 
 
 document.addEventListener("DOMContentLoaded", () => {
