@@ -10,8 +10,8 @@
 
     // Renderiza topbar de manera dinámica
     topbar.innerHTML = `
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <img src="src/img/logo2.png" width="30" height="30" alt="Logo" class="d-inline-block align-text-top">
+      <a class="navbar-brand d-flex align-items-center" href="/index.html">
+        <img src="/src/img/logo2.png" width="30" height="30" alt="Logo" class="d-inline-block align-text-top">
         <span class="ms-2 fs-5">cutsFrame</span>
       </a>
       <button class="btn btn-light rounded-circle p-0 d-flex justify-content-center align-items-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#loginOffcanvas" aria-controls="loginOffcanvas">
@@ -25,10 +25,9 @@
       offcanvasBody.innerHTML = `
         <p class="mb-3">Hola, <strong>${sesion.nombre || 'Usuario'}</strong></p>
         ${sesion.tipo === "admin"
-          ? `<a href="admin.html" class="btn btn-dark w-100 mb-2">Panel Admin</a>`
+          ? `<a href="/pages/panelAdmin.html" class="btn btn-dark w-100 mb-2">Panel Admin</a>`
           : `
-            <a href="pages/perfil.html" class="btn btn-dark w-100 mb-2">Mi Perfil</a>
-            <a href="pages/carrito.html" class="btn btn-dark w-100 mb-2">Carrito</a>
+            <a href="/pages/panelUsuario.html" class="btn btn-dark w-100 mb-2">Mi Perfil</a>
           `}
         <button id="cerrar-sesion" class="btn btn-outline-dark w-100">Cerrar sesión</button>
       `;
@@ -81,7 +80,7 @@
       cerrarSesionBtn.addEventListener("click", (e) => {
         e.preventDefault();
         localStorage.removeItem("sesion");
-        location.reload();
+        window.location.replace("/index.html"); // Redirige al inicio
       });
     }
   });
