@@ -59,7 +59,12 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
           <div class="mb-3">
               <label for="loginPassword" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="password" required>
+              <div class="input-group">
+                  <input type="password" class="form-control" id="password" required>
+                  <button class="btn btn-outline-secondary" type="button" id="toggleLoginPassword">
+                      <i class="bi bi-eye"></i>
+                  </button>
+              </div>
           </div>
           <div class="mb-3">
               <button type="submit" class="btn btn-dark w-100">Entrar</button>
@@ -72,7 +77,21 @@ document.addEventListener("DOMContentLoaded", () => {
         <div>
             <a href="pages/registro.html" class="btn btn-dark w-100">Registrarse</a>
         </div>
-      `;
+        `;
+
+        // Script para mostrar/ocultar contraseña en login
+        setTimeout(() => {
+          const toggle = document.getElementById('toggleLoginPassword');
+          const pass = document.getElementById('password');
+          if (toggle && pass) {
+            toggle.addEventListener('click', function () {
+              const type = pass.type === 'password' ? 'text' : 'password';
+              pass.type = type;
+              this.querySelector('i').classList.toggle('bi-eye');
+              this.querySelector('i').classList.toggle('bi-eye-slash');
+            });
+          }
+        }, 0);        
 
       // Conecta el formulario de login con la función de login
       const formLogin = document.getElementById("login");
