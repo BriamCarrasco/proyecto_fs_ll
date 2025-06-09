@@ -1,7 +1,21 @@
+/* 
+  style.css
+  Hojas de estilos personalizados para la aplicación cutsFrame.
+
+  Estructura:
+  - Variables CSS globales
+  - Efectos de hover en tarjetas
+  - Efectos visuales en imágenes
+  - Estilos para overlays y tarjetas Bootstrap
+*/
+
+
+/* Variables globales */
 :root {
-  --primary-color: #FFE100; 
+  --primary-color: #FFE100; /* Color principal de la marca */
 }
 
+/* Efecto hover en tarjetas */
 .card-hover {
   transition: transform 0.3s ease;
   border: none;
@@ -12,17 +26,17 @@
 }
 
 .card-hover:hover {
-  transform: scale(1.05);
+  transform: scale(1.05); /* Aumenta el tamaño suavemente al hacer hover */
 }
 
-
+/* Efectos visuales en imágenes */
 .img-blur {
   filter: blur(3px);
   width: 100%; 
   display: block; 
 }
 
-
+/* Overlay de imagen en tarjetas */
 .card-img-overlay {
   position: absolute;
   top: 0;
@@ -34,9 +48,10 @@
   justify-content: center; 
   text-align: center;
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);       
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro translúcido */
 }
 
+/* Estilos generales de tarjetas */
 .card {
   position: relative; 
   overflow: hidden;   
@@ -44,8 +59,9 @@
   height: auto; 
 }
 
+/* Título de la tarjeta en overlay: más grande y negrita */
 .card-img-overlay .card-title {
-    margin-bottom: 0; 
-    font-weight: bold; 
-    font-size: 1.5rem; 
+  margin-bottom: 0; 
+  font-weight: bold; 
+  font-size: 1.5rem; 
 }
