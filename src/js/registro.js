@@ -1,4 +1,19 @@
-// Esperamos a que todo el DOM esté cargado antes de ejecutar el código
+/**
+ * registro.js
+ * Script para gestionar el registro de nuevos usuarios en la aplicación.
+ * 
+ * Funcionalidad:
+ * - Valida los datos del formulario de registro usando funciones externas.
+ * - Verifica que el email no esté registrado previamente.
+ * - Guarda el nuevo usuario en localStorage.
+ * - Inicia sesión automáticamente tras el registro exitoso.
+ * - Redirige al usuario a la página principal mostrando un mensaje de éxito.
+ * 
+ * Notas:
+ * - Utiliza clases de Bootstrap para mostrar validaciones visuales.
+ * - Requiere que los IDs de los inputs coincidan con los usados en el script.
+ */
+
 document.addEventListener("DOMContentLoaded", () => {
   // Obtenemos el formulario de inscripción por su ID
   const formulario = document.getElementById("registro");
@@ -48,10 +63,21 @@ document.addEventListener("DOMContentLoaded", () => {
         // Guardamos el array actualizado en el localStorage
         localStorage.setItem("usuarios", JSON.stringify(usuarios));
 
-        // Avisamos al usuario y lo redirigimos al login
+        // INICIO DE SESIÓN AUTOMÁTICO:
+        localStorage.setItem("sesion", JSON.stringify({
+          nombre,
+          apellido,
+          nomUsuario,
+          email,
+          fechaNacimiento,
+          tipo: "normal",
+          logueado: true
+        }));
+
+        // Avisamos al usuario y lo redirigimos al inicio
         alert("¡Usuario registrado con éxito!");
         formulario.reset(); // Limpiamos el formulario
-        window.location.href = "/index.html"; // Redirigimos al login
+        window.location.href = "/index.html"; // Redirigimos al inicio
       }
     });
   }
