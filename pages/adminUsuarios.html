@@ -1,6 +1,27 @@
+<!--
+    adminUsuarios.html - Panel de administración de usuarios para cutsFrame
+
+    Estructura:
+    - Head: Metadatos, favicon, estilos Bootstrap, Bootstrap Icons y personalizados.
+    - Header: Barra de navegación superior (contenido generado dinámicamente).
+    - Offcanvas: Panel lateral para login (contenido generado dinámicamente).
+    - Navbar superior móvil: Botón de menú para abrir el sidebar en móvil.
+    - Sidebar: Menú de navegación lateral fijo en escritorio y offcanvas en móvil.
+    - Main: Tabla de usuarios con acciones de edición y eliminación.
+    - Footer: Derechos reservados.
+    - Scripts: Funcionalidad JS y Bootstrap.
+
+    Notas:
+    - El sidebar contiene enlaces a las secciones de administración (cámaras, usuarios, etc).
+    - El diseño es responsivo y utiliza Bootstrap 5.3.
+    - La tabla de usuarios se genera y gestiona dinámicamente desde JS.
+    - El contenido de la barra superior y el offcanvas se genera dinámicamente por JS.
+-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <!-- Metadatos y enlaces a estilos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/src/img/logo2.png" type="image/png">
@@ -10,6 +31,7 @@
     <title>cutsFrame/admin</title>
 </head>
 <body class="d-flex flex-column min-vh-100 bg-light">
+    <!-- HEADER: Barra de navegación superior -->
     <header>
         <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid" id="topbar">
@@ -18,6 +40,7 @@
         </nav>
     </header>
 
+    <!-- OFFCANVAS: Panel lateral para login -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="loginOffcanvas" aria-labelledby="loginOffcanvasLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="loginOffcanvasLabel">Iniciar sesión</h5>
@@ -28,7 +51,7 @@
         </div>
     </div>
 
-    <!-- Navbar superior solo visible en móvil, con botón de menú -->
+    <!-- NAVBAR superior solo visible en móvil, con botón de menú -->
     <nav class="navbar navbar-dark bg-dark d-md-none">
         <div class="container-fluid">
             <button class="btn btn-outline-light btn-sm rounded-circle d-flex align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas" aria-controls="sidebarOffcanvas" style="width: 40px; height: 40px;">
@@ -39,7 +62,7 @@
     </nav>
 
     <div class="d-flex flex-grow-1">
-        <!-- Sidebar fijo en escritorio, oculto en móvil -->
+        <!-- SIDEBAR fijo en escritorio, oculto en móvil -->
         <nav class="flex-shrink-0 p-3 bg-white border-end shadow-sm d-none d-md-block" style="width: 220px; min-height: 100vh;">
             <h5 class="mb-4 text-center text-dark">Panel Admin</h5>
             <ul class="nav nav-pills flex-column mb-auto">
@@ -53,7 +76,7 @@
             </ul>
         </nav>
 
-        <!-- Sidebar offcanvas para móvil -->
+        <!-- SIDEBAR offcanvas para móvil -->
         <div class="offcanvas offcanvas-start d-md-none" tabindex="-1" id="sidebarOffcanvas" aria-labelledby="sidebarOffcanvasLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="sidebarOffcanvasLabel">Panel Admin</h5>
@@ -64,7 +87,7 @@
                     <li class="nav-item"><a href="adminCamaras.html" class="nav-link text-dark">Cámaras</a></li>
                     <li><a href="#" class="nav-link text-dark">Categorías</a></li>
                     <li><a href="#" class="nav-link text-dark">Imágenes</a></li>
-                    <li><a href="#" class="nav-link text-dark active">Usuarios</a></li>
+                    <li><a href="#" class="nav-link text-dark ">Usuarios</a></li>
                     <li><a href="#" class="nav-link text-dark">Estadísticas</a></li>
                     <li><a href="#" class="nav-link text-dark">Moderación</a></li>
                     <li><a href="#" class="nav-link text-dark">Registro de actividad</a></li>
@@ -72,7 +95,7 @@
             </div>
         </div>
 
-        <!-- Contenido principal -->
+        <!-- MAIN: Tabla de usuarios -->
         <div class="flex-grow-1 d-flex flex-column">
             <main class="flex-grow-1 container py-4">
                 <div class="table-responsive">
@@ -97,10 +120,12 @@
         </div>
     </div>
 
+    <!-- FOOTER: Derechos reservados -->
     <footer class="bg-dark text-white text-center py-3 mt-auto">
         <p>&copy; 2025 cutsFrame. Todos los derechos reservados.</p>
     </footer>
 
+    <!-- SCRIPTS: Funcionalidad JS y Bootstrap -->
     <script src="/src/js/adminAuth.js"></script>
     <script src="/src/js/adminUsuarios.js"></script>
     <script src="/src/js/login.js"></script>

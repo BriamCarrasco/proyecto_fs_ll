@@ -1,6 +1,24 @@
+<!--
+    panelUsuario.html - Panel de usuario para visualizar y editar el perfil en cutsFrame
+
+    Estructura:
+    - Head: Metadatos, favicon, estilos Bootstrap y personalizados.
+    - Header: Barra de navegación superior.
+    - Offcanvas: Panel lateral para login (contenido generado dinámicamente).
+    - Main: Tarjeta con información del perfil y botones para editar cada campo.
+    - Footer: Derechos reservados.
+    - Scripts: Funcionalidad JS y Bootstrap.
+
+    Notas:
+    - Los campos del perfil se editan individualmente y se actualizan en localStorage.
+    - El diseño es responsivo y utiliza Bootstrap 5.3.
+    - El contenido de la barra superior y el offcanvas se genera dinámicamente por JS.
+-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
+    <!-- Metadatos y enlaces a estilos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="/src/img/logo2.png" type="image/png">
@@ -9,6 +27,8 @@
     <title>cutsFrame</title>
 </head>
 <body class="d-flex flex-column min-vh-100 bg-light">
+
+    <!-- HEADER: Barra de navegación superior -->
     <header>
         <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid" id="topbar">
@@ -17,6 +37,7 @@
         </nav>
     </header>
 
+    <!-- OFFCANVAS: Panel lateral para login -->
     <div class="offcanvas offcanvas-end" tabindex="-1" id="loginOffcanvas" aria-labelledby="loginOffcanvasLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="loginOffcanvasLabel">Iniciar sesión</h5>
@@ -27,6 +48,7 @@
         </div>
     </div>
 
+    <!-- MAIN: Tarjeta de perfil de usuario -->
     <main class="flex-grow-1 container py-4">
         <div class="row justify-content-center">
             <div class="col-md-8 col-lg-6">
@@ -70,11 +92,12 @@
         </div>
     </main>
 
+    <!-- FOOTER: Derechos reservados -->
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2025 cutsFrame. Todos los derechos reservados.</p>
     </footer>
 
-
+    <!-- SCRIPTS: Funcionalidad JS y Bootstrap -->
     <script src="/src/js/login.js"></script>
     <script src="/src/js/validate.js"></script>
     <script src="/src/js/sesion.js"></script>
