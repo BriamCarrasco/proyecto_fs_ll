@@ -82,3 +82,32 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+
+// Mostrar/ocultar contraseña principal y confirmación
+document.addEventListener("DOMContentLoaded", () => {
+  // Botón para contraseña principal
+  const togglePassword = document.getElementById('togglePassword');
+  const passwordInput = document.getElementById('password');
+  if (togglePassword && passwordInput) {
+    togglePassword.addEventListener('click', function () {
+      const type = passwordInput.type === 'password' ? 'text' : 'password';
+      passwordInput.type = type;
+      this.querySelector('i').classList.toggle('bi-eye');
+      this.querySelector('i').classList.toggle('bi-eye-slash');
+    });
+  }
+
+  // Botón para confirmar contraseña (opcional)
+  // Si quieres agregar el botón, agrega en el HTML un botón con id="toggleConfirmPassword" junto al input de confirmarPassword
+  const toggleConfirmPassword = document.getElementById('toggleConfirmPassword');
+  const confirmPasswordInput = document.getElementById('confirmarPassword');
+  if (toggleConfirmPassword && confirmPasswordInput) {
+    toggleConfirmPassword.addEventListener('click', function () {
+      const type = confirmPasswordInput.type === 'password' ? 'text' : 'password';
+      confirmPasswordInput.type = type;
+      this.querySelector('i').classList.toggle('bi-eye');
+      this.querySelector('i').classList.toggle('bi-eye-slash');
+    });
+  }
+});
