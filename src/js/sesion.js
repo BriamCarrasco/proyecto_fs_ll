@@ -1,5 +1,23 @@
+/**
+ * sesion.js - Manejo dinámico de sesión y barra superior en cutsFrame
+ *
+ * Funcionalidad principal:
+ * - Verifica si hay una sesión activa en localStorage.
+ * - Renderiza dinámicamente la barra superior (topbar) y el panel lateral (offcanvas) según el estado de sesión.
+ * - Si el usuario está logueado:
+ *    - Muestra saludo, acceso a panel de usuario o admin y botón para cerrar sesión.
+ * - Si el usuario NO está logueado:
+ *    - Muestra formulario de login, enlace a recuperación de contraseña y botón de registro.
+ *    - Conecta el formulario de login con la función de autenticación.
+ * - Permite cerrar sesión y redirige al inicio.
+ *
+ * Notas:
+ * - El contenido de la barra superior y el offcanvas se genera completamente por JS.
+ * - El login y logout se gestionan usando localStorage.
+ * - El archivo debe cargarse después de que existan los elementos #topbar y #offcanvas-body en el DOM.
+ */
 
-  document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     // Verifica si hay una sesión activa
     const sesion = JSON.parse(localStorage.getItem("sesion"));
     const topbar = document.getElementById("topbar");
@@ -84,4 +102,3 @@
       });
     }
   });
-
