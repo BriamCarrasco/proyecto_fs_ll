@@ -1,4 +1,20 @@
-//Al cargar cualquier página, verifica si el usuario admin ya existe y lo crea si no
+/**
+ * login.js
+ * Script para gestionar el inicio de sesión y la creación automática del usuario administrador.
+ * 
+ * Funcionalidad:
+ * - Al cargar cualquier página, verifica si el usuario admin existe y lo crea si no.
+ * - Permite iniciar sesión con email y contraseña.
+ * - Guarda la sesión activa en localStorage con los datos clave del usuario.
+ * - Redirige al usuario a la página principal o a una URL guardada previamente.
+ * - Muestra mensajes de error si los datos son incorrectos o faltan campos.
+ * 
+ * Notas:
+ * - Utiliza clases de Bootstrap para mostrar validaciones visuales (en formularios).
+ * - Requiere que los IDs de los inputs coincidan con los usados en el script.
+ */
+
+// Al cargar la página, verifica si el usuario admin ya existe y lo crea si no
 document.addEventListener("DOMContentLoaded", () => {
   // Recupera la lista de usuarios desde localStorage (si no hay, usa un array vacío)
   const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
@@ -25,8 +41,13 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-
-// Función para iniciar sesión con email y contraseña
+/**
+ * Función para iniciar sesión con email y contraseña.
+ * Si los datos son correctos, guarda la sesión y redirige al usuario.
+ * Si no, muestra un mensaje de error.
+ * @param {string} email - Email ingresado por el usuario.
+ * @param {string} password - Contraseña ingresada por el usuario.
+ */
 function login(email, password) {
   // Obtiene los usuarios registrados
   const usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
@@ -38,9 +59,13 @@ function login(email, password) {
   if (usuario) {
     // Se guarda en localStorage que la sesión está activa y los datos clave del usuario
     localStorage.setItem("sesion", JSON.stringify({
+      nombre: usuario.nombre, // nombre 
+      apellido: usuario.apellido, // apellido 
+      nomUsuario: usuario.nomUsuario, // nombre de usuario (no email)
+      email: usuario.email, // email del usuario
+      fechaNacimiento: usuario.fechaNacimiento, // fecha de nacimiento
+      tipo: usuario.tipo, // tipo de usuario (normal o admin)
       logueado: true,
-      usuario: usuario.usuario, // nombre de usuario (no email)
-      tipo: usuario.tipo        // tipo (normal o admin)
     }));
 
     // Redirección después del login: si se guardó una URL de destino previa, se usa
@@ -52,7 +77,6 @@ function login(email, password) {
     alert("Correo o contraseña incorrectos.");
   }
 }
-
 
 // Conecta el formulario de login con la función de login
 document.addEventListener("DOMContentLoaded", () => {
