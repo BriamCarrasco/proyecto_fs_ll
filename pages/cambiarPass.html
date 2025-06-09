@@ -1,10 +1,26 @@
+<!--
+    cambiarPass.html - Página para cambiar la contraseña de un usuario registrado desde el panel de usuario en cutsFrame
+
+    Estructura:
+    - Head: Metadatos, favicon, estilos Bootstrap y Bootstrap Icons.
+    - Header: Barra de navegación superior.
+    - Main: Formulario para cambiar la contraseña (requiere contraseña actual).
+    - Footer: Derechos reservados.
+    - Scripts: Funcionalidad JS y Bootstrap.
+
+    Notas:
+    - El usuario debe ingresar su contraseña actual, la nueva y confirmarla.
+    - El diseño es responsivo y utiliza Bootstrap 5.3.
+    - La validación es solo en frontend, debes conectar con backend para cambio real.
+-->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <!-- Metadatos y enlaces a estilos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recuperar contraseña | cutsFrame</title>
+    <title>Cambiar contraseña | cutsFrame</title>
     <link rel="icon" href="/src/img/logo2.png" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -23,8 +39,47 @@
         </nav>
     </header>
 
+    <!-- MAIN: Formulario para cambiar contraseña desde panel de usuario -->
     <main class="container flex-grow-1 d-flex align-items-center justify-content-center">
-
+        <div class="card shadow p-4 my-5" style="max-width: 430px; width: 100%;">
+            <h2 class="mb-4 text-center">Cambiar contraseña</h2>
+            <form id="cambiarPassForm" novalidate>
+                <div class="mb-3">
+                    <label for="actualPassword" class="form-label">Contraseña actual</label>
+                    <div class="input-group">
+                        <input type="password" class="form-control" id="actualPassword" placeholder="Contraseña actual" required>
+                        <button class="btn btn-outline-secondary" type="button" id="toggleActualPassword">
+                            <i class="bi bi-eye"></i>
+                        </button>
+                    </div>
+                    <div class="invalid-feedback">Ingrese su contraseña actual</div>
+                </div>
+                <div class="mb-3">
+                    <label for="nuevaPassword" class="form-label">Nueva contraseña</label>
+                    <div class="input-group">
+                        <input type="password" class="form-control" id="nuevaPassword" placeholder="Nueva contraseña" required minlength="8">
+                        <button class="btn btn-outline-secondary" type="button" id="toggleNuevaPassword">
+                            <i class="bi bi-eye"></i>
+                        </button>
+                    </div>
+                    <div class="invalid-feedback">Debe tener mínimo 8 caracteres, 1 número y 1 mayúscula.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="confirmarPassword" class="form-label">Confirmar nueva contraseña</label>
+                    <div class="input-group">
+                        <input type="password" class="form-control" id="confirmarPassword" placeholder="Confirmar contraseña" required minlength="8">
+                        <button class="btn btn-outline-secondary" type="button" id="toggleConfirmarPassword">
+                            <i class="bi bi-eye"></i>
+                        </button>
+                    </div>
+                    <div class="invalid-feedback">Las contraseñas no coinciden</div>
+                </div>
+                <button type="submit" class="btn btn-dark w-100">Cambiar contraseña</button>
+            </form>
+            <div class="mt-3 text-center">
+                <a href="/pages/panelUsuario.html">Volver al panel de usuario</a>
+            </div>
+        </div>
     </main>
 
     <!-- FOOTER: Derechos reservados -->
@@ -33,7 +88,8 @@
     </footer>
 
     <!-- SCRIPTS: Funcionalidad JS y Bootstrap -->
-    <script src="/src/js/recuperarPass.js"></script>
+    <script src="/scr/js/sesion.js"></script>
+    <script src="/src/js/cambiarPass.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
