@@ -1,5 +1,21 @@
-//información de cámaras
+/**
+ * camaras.js
+ * Script para gestionar la información, visualización y administración de cámaras fotográficas y de cine.
+ * 
+ * Funcionalidad:
+ * - Define un array de objetos con la información detallada de cada cámara.
+ * - Permite generar dinámicamente listados, tablas y acordeones de cámaras según la categoría seleccionada.
+ * - Permite visualizar información detallada de una cámara específica.
+ * - Permite editar y eliminar cámaras desde una tabla interactiva (modo administrador).
+ * 
+ * Notas:
+ * - Requiere que existan elementos HTML con los IDs y clases utilizados en las funciones.
+ * - El array `camaras` puede ser extendido con más modelos y categorías.
+ * - Las funciones están pensadas para ser usadas en diferentes vistas (listado, detalle, administración).
+ */
 
+
+// Array de cámaras con toda la información relevante
 const camaras = [
   {
     id: "Aaton7LTR",
@@ -455,7 +471,7 @@ const camaras = [
   }
 ];
 
-//cargar camaras e información de la categoría actual
+// Genera un acordeón de cámaras filtradas por la categoría actual
 function generarCamaras() {
   const contenedor = document.getElementById("accordionCameras");
   contenedor.innerHTML = ""; // limpia contenido anterior si existe
@@ -489,7 +505,7 @@ function generarCamaras() {
 }
 
 
-//cargar información de la cámaras
+// Carga la información detallada de una cámara específica en la vista de detalle
 function cargarInformacion() {
     const camara = camaras.find(c => c.modelo === modelo);
 
@@ -526,6 +542,7 @@ function cargarInformacion() {
     }
 }
 
+// Genera una tabla con todas las cámaras y agrega botones para editar y eliminar
 function generarTablaCamaras() {
   const tbody = document.querySelector("#tablaCamaras tbody");
   if (!tbody) return;
@@ -567,7 +584,7 @@ function generarTablaCamaras() {
   });
 }
 
-//funcionar para eliminar camaras.
+// Elimina una cámara del array y actualiza la tabla
 function eliminarCamara(idx) {
   if (confirm("¿Seguro que deseas eliminar esta cámara?")) {
     camaras.splice(idx, 1);
@@ -575,7 +592,7 @@ function eliminarCamara(idx) {
   }
 }
 
-//función para editar camaras.
+// Permite editar el modelo de una cámara y actualiza la tabla
 function editarCamara(idx) {
   const camara = camaras[idx];
   const nuevoModelo = prompt("Editar modelo:", camara.modelo);
@@ -585,10 +602,10 @@ function editarCamara(idx) {
   }
 }
 
-//ejecutar script al cargar el DOM
+// Inicialización automática de la tabla de cámaras al cargar el DOM
 document.addEventListener("DOMContentLoaded", generarTablaCamaras);
 
-
+// Inicialización automática de acordeón y detalle de cámaras al cargar el DOM
 document.addEventListener("DOMContentLoaded", () => {
   generarCamaras();
   cargarInformacion();
