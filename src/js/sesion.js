@@ -47,7 +47,7 @@
               <button type="submit" class="btn btn-dark w-100">Entrar</button>
           </div>
           <div class="mt-3 text-center">
-              <a href="/index.html">Recuperar contraseña</a>
+              <a href="/pages/recuperarPass.html">Recuperar contraseña</a>
           </div>
         </form>
         <hr>
